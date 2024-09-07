@@ -1,0 +1,38 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "assistant": {
+    "default_model": {
+      "provider": "google",
+      "model": "gemini-1.5-flash"
+    },
+    "version": "2"
+  },
+  "features": {
+    "inline_completion_provider": "none"
+  },
+  "vim_mode": true,
+  "tab_size": 2,
+  "ui_font_size": 14.75,
+  "buffer_font_size": 14.75,
+  "ui_font_family": "JetBrainsMono Nerd Font",
+  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Lusch Darker"
+  },
+  "format_on_save": "on",
+  "vim": {
+    "use_system_clipboard": "always"
+  },
+  "project_panel": {
+    "dock": "right"
+  }
+}

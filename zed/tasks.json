@@ -1,0 +1,9 @@
+// Static tasks configuration.
+[
+  {
+    "label": "test $ZED_RELATIVE_FILE",
+    "command": "flutter",
+    "args": ["test", "\"$ZED_RELATIVE_FILE\""],
+    "tags": ["flutter-test"]
+  }
+]

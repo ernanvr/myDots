@@ -1,0 +1,100 @@
+[
+  {
+    "context": "vim_mode == insert",
+    "bindings": {
+      "j j": "vim::NormalBefore" // remap jj in insert mode to escape.
+    }
+  },
+  {
+    "context": "vim_mode == insert && !menu",
+    "bindings": {
+      "ctrl-l": "vim::InsertAfter" // remap jj in insert mode to escape.
+    }
+  },
+  {
+    "context": "vim_mode == insert && !menu",
+    "bindings": {
+      "ctrl-h": "vim::InsertBefore" // remap jj in insert mode to escape.
+    }
+  },
+  {
+    "context": "vim_mode == normal && Editor && VimControl && !VimWaiting && !menu",
+    "bindings": {
+      "shift-h": "pane::ActivatePrevItem" // remap jj in insert mode to escape.
+    }
+  },
+  {
+    "context": "vim_mode == normal && Editor && VimControl && !VimWaiting && !menu",
+    "bindings": {
+      "ctrl-'": "terminal_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-'": "workspace::ToggleBottomDock",
+      "ctrl-p": ["terminal::SendKeystroke", "ctrl-p"],
+      "ctrl-n": ["terminal::SendKeystroke", "ctrl-n"],
+      "ctrl-b": ["terminal::SendKeystroke", "ctrl-b"]
+    }
+  },
+  {
+    "context": "vim_mode == normal && Editor && VimControl && !VimWaiting && !menu",
+    "bindings": {
+      "shift-l": "pane::ActivateNextItem" // remap jj in insert mode to escape.
+    }
+  },
+  {
+    "context": "vim_mode == normal && !menu",
+    "bindings": {
+      "space e": "workspace::ToggleRightDock" // remap jj in insert mode to escape.
+    }
+  },
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "q": "workspace::ToggleRightDock" // remap jj in insert mode to escape.
+    }
+  },
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "enter": ["project_panel::OpenPermanent", "workspace::ToggleLeftDock"] // remap jj in insert mode to escape.
+    }
+  },
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "a": "project_panel::NewFile"
+    }
+  },
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "d": "project_panel::Delete"
+    }
+  },
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "shift-a": "project_panel::NewDirectory"
+    }
+  },
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "ctrl-c": "project_panel::Copy"
+    }
+  },
+  {
+    "context": "vim_mode == visual",
+    "bindings": {
+      "shift-s": [
+        "vim::PushOperator",
+        {
+          "AddSurrounds": {}
+        }
+      ]
+    }
+  }
+]
